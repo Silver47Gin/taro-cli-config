@@ -9,7 +9,6 @@
     "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
     "outDir": "./dist",
-    "skipLibCheck": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strictNullChecks": true,
@@ -17,11 +16,17 @@
     "traceResolution": false,
     "sourceMap": true,
     "baseUrl": ".",
-    "rootDir": "./src",
-    "declaration": true,
-    "declarationDir": "types"
+    "rootDir": "./src"
   },
   "include": ["src"],
-  "exclude": ["dist", "node_modules"],
+  "exclude": [
+    "__tests__",
+    "node_modules",
+    "dist",
+    "tests",
+    "jest",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ],
   "compileOnSave": false
 }
