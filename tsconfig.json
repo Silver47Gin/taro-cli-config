@@ -16,7 +16,8 @@
     "traceResolution": false,
     "sourceMap": true,
     "baseUrl": ".",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "skipLibCheck": true
   },
   "include": ["src"],
   "exclude": [
